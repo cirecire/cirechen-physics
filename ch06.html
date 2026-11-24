@@ -12,12 +12,12 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 .wrap{display:grid;grid-template-columns:240px 1fr;gap:18px;max-width:1180px;margin:0 auto;padding:18px}
-header{background:linear-gradient(135deg,#0e7490,#155e75);color:#fff;padding:22px 26px;border-radius:14px;margin-bottom:14px;grid-column:1/-1}
+header{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;padding:22px 26px;border-radius:14px;margin-bottom:14px;grid-column:1/-1}
 header h1{font-size:22px;margin-bottom:4px}
 header p{opacity:.92;font-size:13px}
 nav{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;height:fit-content;position:sticky;top:14px}
 .nav-i{padding:10px 12px;border-radius:8px;cursor:pointer;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.nav-i:hover{background:#fff7ed}
+.nav-i:hover{background:#ecfeff}
 .nav-i.on{background:var(--accent);color:#fff}
 .nav-i .st{font-size:11px;opacity:.85}
 .nav-i .st.ok{color:var(--ok)}
@@ -36,7 +36,7 @@ h2{font-size:18px;margin-bottom:6px}
 .bridge strong{color:var(--accent)}
 .bridge .bl{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .vid{margin:14px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.vid-h{padding:10px 14px;background:#fff7ed;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.vid-h{padding:10px 14px;background:#ecfeff;font-size:13px;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .vid-h .meta{display:flex;gap:8px;align-items:center;font-size:11px}
 .tag{background:#e5e7eb;padding:2px 8px;border-radius:10px;font-size:11px}
 .tag.core{background:#dcfce7;color:#166534}
@@ -46,7 +46,7 @@ h2{font-size:18px;margin-bottom:6px}
 button{font-family:inherit;border:none;cursor:pointer;border-radius:8px;padding:8px 14px;font-size:14px;background:var(--accent);color:#fff}
 button.secondary{background:#e5e7eb;color:var(--text)}
 button:hover{opacity:.92}
-input[type=text],input[type=number]{padding:10px 12px;font-size:15px;border:1px solid var(--line);border-radius:8px;width:120px;font-family:inherit}
+input[type=text],input[type=number]{padding:10px 12px;font-size:16px;border:1px solid var(--line);border-radius:8px;width:120px;font-family:inherit}
 input:focus{outline:none;border-color:var(--accent)}
 input.ok{border-color:var(--ok);background:#f0fdf4}
 input.err{border-color:var(--err);background:#fef2f2}
@@ -80,7 +80,7 @@ svg line,svg path{transition:stroke .3s,opacity .3s}
 .kp-c .n{font-size:12px;color:var(--accent);font-weight:700}
 .kp-c .t{font-size:15px;font-weight:600;margin:2px 0 5px;line-height:1.4}
 .kp-c .d{font-size:12px;color:var(--muted);line-height:1.55}
-.why{background:#fff7ed;border:1px solid #fdba74;border-radius:10px;padding:14px 16px;margin:14px 0;font-size:14px;line-height:1.85}
+.why{background:#ecfeff;border:1px solid #a5f3fc;border-radius:10px;padding:14px 16px;margin:14px 0;font-size:14px;line-height:1.85}
 .why b{color:var(--accent)}
 .how{font-size:14px;line-height:2.1;margin:8px 0 2px}
 .how b{color:var(--accent)}
@@ -205,8 +205,8 @@ html[data-theme="dark"] table th{color:var(--muted)}
 </head>
 <body>
 <div style="background:#fff;border-bottom:1px solid #e5e7eb;padding:8px 12px;font-size:13px;display:flex;gap:6px 10px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:99">
- <a href="index.html" style="color:#164e63;text-decoration:none;font-weight:600"><span class="zh">← 主页</span><span class="en">← Home</span></a> <a href="home.html" style="color:#164e63;text-decoration:none;font-weight:600"><span class="en">← Overview</span><span class="zh">← 总览</span></a>
- <a href="unittests.html" style="color:#164e63;text-decoration:none;font-weight:600"><span class="en">Unit tests</span><span class="zh">单元测试</span></a>
+ <a href="index.html" style="color:var(--accent);text-decoration:none;font-weight:600"><span class="zh">← 主页</span><span class="en">← Home</span></a> <a href="home.html" style="color:var(--accent);text-decoration:none;font-weight:600"><span class="en">← Overview</span><span class="zh">← 总览</span></a>
+ <a href="unittests.html" style="color:var(--accent);text-decoration:none;font-weight:600"><span class="en">Unit tests</span><span class="zh">单元测试</span></a>
  <span style="font-size:11px;color:#5b6472"><span class="en">Content from Khan Academy · CC BY-NC-SA</span><span class="zh">内容来自 Khan Academy · CC BY-NC-SA</span></span>
 </div>
 
